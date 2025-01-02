@@ -2,15 +2,28 @@
  "signatures": [
   {
    "keyid": "d18521259779c79682178d70950a15ddbc3012e6896df4d972da5b1d0ccdd5c9",
-   "sig": "3046022100fe8eeae4719703ffbb640cd63911bdcb60ecec22e2a2bac8af02d7f7d1a978300221008fbade9f6951cb975a7cab7a4b71145a034f03c3332308873e049391c0a61855"
+   "sig": "30450221008b87a6d65ed9eaa2d7261768e587e1a70c264fcc565a270490aeb84822cc8b06022069478b75069e0527158617daec80b5cbef88a9b200e0c637595ffe2bfb5eadc2"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-02T11:45:33Z",
+  "expires": "2026-01-02T11:55:58Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 1,
+  "targets": {
+   "first-role/1.0.0/some-file": {
+    "hashes": {
+     "sha256": "30713cd4799bab59eb38274132dced1e3f729cb9d5c82b3d8dfe9f1920995ec1"
+    },
+    "length": 32
+   },
+   "first-role/1.1.0/another-file": {
+    "hashes": {
+     "sha256": "21bf68133fed25415e434a50f3cc71bd8e17f016bc6437d17eb600376048541a"
+    },
+    "length": 59
+   }
+  },
+  "version": 2,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
