@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "da7a2a79282a410be9cd3c12dcc4392e1f12a3ac44bb5523fc2393fb742afd7c",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2026-01-02T11:28:23Z",
+  "keys": {
+   "4562045c73bbdbcacc8668cb94ff93b04f7149fcd359eb09b874c4454dde7d03": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/jskiba/tuf-testing-2/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   },
+   "da7a2a79282a410be9cd3c12dcc4392e1f12a3ac44bb5523fc2393fb742afd7c": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "jakub.skiba@solarwinds.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@jskiba"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "da7a2a79282a410be9cd3c12dcc4392e1f12a3ac44bb5523fc2393fb742afd7c"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "4562045c73bbdbcacc8668cb94ff93b04f7149fcd359eb09b874c4454dde7d03"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "da7a2a79282a410be9cd3c12dcc4392e1f12a3ac44bb5523fc2393fb742afd7c"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "4562045c73bbdbcacc8668cb94ff93b04f7149fcd359eb09b874c4454dde7d03"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
